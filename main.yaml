@@ -1,0 +1,8 @@
+- name: configure mysql server
+  hosts: localhost
+  become: yes #remote server
+  vars_files:
+  - variables-dev.tf
+   #ansible server
+  roles:
+  - ${{ backend }}
