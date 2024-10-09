@@ -1,8 +1,8 @@
-- name: configure mysql server
+- name: configure {{ component }} server #component == backend
   hosts: localhost
   become: yes #remote server
   vars_files:
-  - variables-dev.tf
+  - "variables-{{ environment }}.yaml"  #environment == dev
    #ansible server
   roles:
-  - ${{ backend }}
+  - "{{ component }}"

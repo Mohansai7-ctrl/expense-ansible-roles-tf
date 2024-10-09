@@ -1,3 +1,3 @@
-mysql_root_password: ExpenseApp@1
+mysql_root_password: ExpenseApp1  #Becuase in RDS Db we set the password as ExpenseApp1
 app_location: /app
 component: backend
