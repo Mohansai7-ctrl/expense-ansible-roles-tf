@@ -2,7 +2,7 @@
   hosts: localhost
   become: yes #remote server
   vars_files:
-  - "variables-{{ environment }}.yaml"  #environment == dev
+    - "variables-{{ environment }}.yaml"  #environment == dev
    #ansible server
   roles:
-  - "{{ component }}"
+    - "{{ component }}"
